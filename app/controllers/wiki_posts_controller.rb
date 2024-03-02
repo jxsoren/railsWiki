@@ -1,5 +1,6 @@
 class WikiPostsController < ApplicationController
-  before_action :set_wiki_post, only: %i[ show edit update destroy ]
+  # J! Sets the corresponding Wiki post based on the ID from path param
+  before_action :set_wiki_post, only: %i[ edit update destroy ]
 
   # GET /wiki_posts or /wiki_posts.json
   def index
