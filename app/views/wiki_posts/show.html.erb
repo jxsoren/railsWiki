@@ -3,6 +3,19 @@
 <%= render @wiki_post %>
 
 <div>
+  <p>
+    Title:
+    <%= @wiki_post.title %>
+  </p>
+
+  <p>
+    ID:
+    <%= @wiki_post.id %>
+  </p>
+
+</div>
+
+<div>
   <%= link_to "Edit this wiki post", edit_wiki_post_path(@wiki_post) %> |
   <%= link_to "Back to wiki posts", wiki_posts_path %>
 
