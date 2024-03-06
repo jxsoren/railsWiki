@@ -2,17 +2,26 @@
 
 <%= render @wiki_post %>
 
-<div>
-  <p>
+<div class="wiki_post">
+  <span class="wiki_post title">
     Title:
     <%= @wiki_post.title %>
-  </p>
+  </span>
 
-  <p>
+  <span class="wiki_post id">
     ID:
     <%= @wiki_post.id %>
-  </p>
+  </span>
 
+  <span class="wiki_post publish_date">
+    Publish Date:
+    <%= @wiki_post.created_at %>
+  </span>
+
+  <span class="wiki_post update_date">
+    Last Update:
+    <%= @wiki_post.updated_at %>
+  </span>
 </div>
 
 <div>
