@@ -11,6 +11,18 @@
     </div>
   <% end %>
 
+  <%= form.label :title, "Post Title" %>
+  <%= form.text_field :title %>
+
+  <%= form.label :title, "Author" %>
+  <%= form.text_field :author %>
+
+  <%= form.label :title, "Post Image" %>
+  <%= form.file_field :image %>
+
+  <%= form.label :title, "Description" %>
+  <%= form.text_field :description %>
+
   <div>
     <%= form.submit %>
   </div>
