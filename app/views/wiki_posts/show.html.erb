@@ -2,6 +2,8 @@
 
 <%= render @wiki_post %>
 
+
+
 <div class="wiki_post">
   <span class="wiki_post title">
     Title:
@@ -11,6 +13,21 @@
   <span class="wiki_post id">
     ID:
     <%= @wiki_post.id %>
+  </span>
+
+  <span class="wiki_post image">
+    Image:
+    <%= @wiki_post.image %>
+  </span>
+
+  <span class="wiki_post author">
+    Author:
+    <%= @wiki_post.author %>
+  </span>
+
+  <span class="wiki_post description">
+    Description:
+    <%= @wiki_post.description %>
   </span>
 
   <span class="wiki_post publish_date">
